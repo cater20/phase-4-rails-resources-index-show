@@ -5,7 +5,7 @@ class BirdsController < ApplicationController
         render json: birds
       end
     
-      # GET /birds/:id
+     
       def show
         bird = Bird.find_by(id: params[:id])
         if bird
